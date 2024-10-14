@@ -1,0 +1,107 @@
+/* Gaya untuk gambar ikon di dalam tombol */
+.icon {
+    width: 50px; 
+    height: 50px; 
+    margin-right: 10px; 
+    vertical-align: middle;
+    text-align: center;
+    align-items: center;
+}
+
+/* Semua gaya lain yang telah Anda buat */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%; 
+}
+
+body {
+    background: url("./bg-pmpk.png") center/cover no-repeat fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-judul {
+   font-family: sans-serif;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.7); 
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    width: 90%; 
+    max-width: 575px; 
+    box-sizing: border-box;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, 
+                rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 20px;
+    margin: 10px auto;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.logo img {
+    width: 120px; 
+    height: 120px;
+    border: none;
+    border-radius: 100%;
+    margin-top: 15px;
+}
+
+@media screen and (min-width: 768px) {
+    .logo img {
+        width: 150px; 
+        height: 150px;
+    }
+
+    .card {
+        width: 575px; 
+    }
+}
+
+.list-button {
+    margin: 20px;
+}
+
+.yt, .ig, .fb, .laman, .tt {
+    border: none;
+    color: white;
+    padding: 10px;
+    width: 100%; 
+    max-width: 300px; 
+    font-size: 19px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin: 5px auto; 
+    cursor: pointer;
+    display: flex; /* Ganti display ke flex untuk menyelaraskan gambar dan teks */
+    align-items: center; /* Menyelaraskan gambar dan teks secara vertikal */
+    justify-content: center;
+    transition: background-color 0.5s, transform 0.2s;
+}
+
+/* Warna dasar tombol */
+.yt { background-color: red; }
+.ig { background-color: rgb(239, 72, 202); }
+.fb { background-color: rgb(0, 128, 255); }
+.laman { background-color: rgb(0, 225, 241); }
+.tt { background-color: rgb(0, 0, 0); }
+
+/* Efek hover untuk setiap tombol */
+.yt:hover { background-color: rgb(203, 3, 3); }
+.ig:hover { background-color: rgb(204, 3, 161); }
+.fb:hover { background-color: rgb(0, 109, 219); }
+.laman:hover { background-color: rgb(0, 192, 206); }
+.tt:hover { background-color: rgb(48, 14, 14); }
+
+/* Efek aktif saat tombol ditekan */
+.yt:active, .ig:active, .fb:active, .laman:active, .tt:active {
+    transform: scale(0.95);
+}
